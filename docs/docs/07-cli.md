@@ -932,6 +932,7 @@ ignite generate ts-client [flags]
 
 ```
   -h, --help                help for ts-client
+  -o, --output string       typescript client output path
       --proto-all-modules   enables proto code generation for 3rd party modules used in your chain
   -y, --yes                 Answers interactive yes/no questions with yes
 ```
@@ -1107,7 +1108,6 @@ Transactions subcommands
 
 ```
       --address-prefix string    Account address prefix (default "cosmos")
-      --broadcast-mode string    Transaction broadcasting mode (sync|async|block), use sync if you encounter timeouts (default "block")
       --fees string              Fees to pay along with transaction; eg: 10uatom
       --gas string               gas limit to set per-transaction; set to "auto" to calculate sufficient gas automatically (default "auto")
       --gas-prices string        Gas prices in decimal format to determine the transaction fee (e.g. 0.1uatom)
@@ -1144,7 +1144,6 @@ Bank transaction subcommands
 
 ```
       --address-prefix string    Account address prefix (default "cosmos")
-      --broadcast-mode string    Transaction broadcasting mode (sync|async|block), use sync if you encounter timeouts (default "block")
       --fees string              Fees to pay along with transaction; eg: 10uatom
       --gas string               gas limit to set per-transaction; set to "auto" to calculate sufficient gas automatically (default "auto")
       --gas-prices string        Gas prices in decimal format to determine the transaction fee (e.g. 0.1uatom)
@@ -1179,7 +1178,6 @@ ignite node tx bank send [from_account_or_address] [to_account_or_address] [amou
 
 ```
       --address-prefix string    Account address prefix (default "cosmos")
-      --broadcast-mode string    Transaction broadcasting mode (sync|async|block), use sync if you encounter timeouts (default "block")
       --fees string              Fees to pay along with transaction; eg: 10uatom
       --gas string               gas limit to set per-transaction; set to "auto" to calculate sufficient gas automatically (default "auto")
       --gas-prices string        Gas prices in decimal format to determine the transaction fee (e.g. 0.1uatom)
